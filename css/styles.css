@@ -1,0 +1,520 @@
+:root{
+--main-color: #212121;
+--box-color: #2F303A;
+--accent-color: #2196F3;
+--contact-color: #757575;
+--btn-bg-color: #F5F4FA;
+--bckground-color:#FFFFFF;
+--soc-icons:#AFB1B8;
+--bot-adress-color:rgba(255, 255, 255, 0.6);
+--line-color:#ECECEC;
+--border-card-color:#EEEE;
+--footer-icons-bgcolor:rgba(255, 255, 255, 0.1);
+--secondary-font-family: 'Raleway',
+sans-serif;
+--primaly-font-family: 'Roboto',
+sans-serif;
+}
+
+body{
+background-color: var(--bckground-color);
+font-size: 14px;
+letter-spacing: 0.03em;
+font-family: var(--primaly-font-family);
+line-height: 1.71;
+}
+
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
+
+.list{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.link{
+text-decoration: none;
+}
+
+.container{
+width: 1200px;
+margin: 0 auto;
+}
+
+h1, h2, h3{
+margin: 0;
+}
+
+p{
+margin: 0;
+}
+
+hr{
+border: 1px solid var(--line-color);
+margin: 0;   
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
+/*-------LOGO------*/
+
+.logo {
+color: var(--main-color);
+font-family: var(--secondary-font-family);
+font-size: 26px;
+line-height: 1.2;
+display: block;
+width: 145px;
+margin-right: 93px;
+}
+
+.blue-color {
+color: var(--accent-color);
+}
+
+/*---------HEADER---------*/
+
+.header{
+max-width: 1600px;
+display: flex;
+padding-top: 24px;
+padding-bottom: 25px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.contacts-list{
+margin-left: auto;
+}
+
+.header-item{
+display: inline-block;
+margin-right: 50px;
+}
+
+.contacts-icon{
+margin-right: 10px;
+}
+
+.contacts-icon:hover{
+fill: #2196F3;
+}
+
+/*------TITLES FOR MAIN PAGE--------*/
+
+.section-title{
+font-size: 36px;
+line-height: 1.16;
+color: var(--main-color);
+text-align: center;
+margin-bottom: 50px;
+}
+
+/*---------HERO--------*/
+
+.hero{
+background-color: var(--box-color);
+background-image: linear-gradient(
+to right, 
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url(../images/hero.jpg);
+background-position: center;
+background-size: cover;
+max-width: 1600px;
+margin: 0 auto;
+text-align: center;
+display: flex;
+}
+
+.hero-flex{
+margin: auto;
+align-items: center;
+justify-content: center;
+padding-top: 106px;
+padding-bottom: 106px;
+}
+
+.hero-title{
+color: var(--bckground-color);
+font-family: var(--primaly-font-family);
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+margin-bottom: 30px;
+}
+
+/*------BUTTON HERO-----*/
+
+.button {
+background-color: var(--accent-color);
+color: var(--bckground-color);
+font-family: var(--primaly-font-family);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+cursor: pointer;
+text-align: center;
+
+border-radius: 4px;
+border-style: hidden;
+padding: 10px 32px;
+min-width: 200px;
+}
+
+/*------BENEFITS-------*/
+.benefits-svg{
+background-color: var(--btn-bg-color);
+border-radius: 4px;
+max-height: 120px;
+max-width: 270px;
+margin-bottom: 30px;
+padding: 25px 100px;
+}
+
+.benefits-list{
+display: flex;
+justify-content: space-between;
+}
+
+.section-item:not(:last-child){
+padding-right: 30px;
+}
+
+.benefits-title {
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--main-color);
+margin-bottom: 10px;
+}
+
+.benefits-text {
+line-height: 1.71;
+color: var(--contact-color);
+width: 270px;
+}
+
+/*------PHOTO LIST-----*/
+
+.photo-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/*--------TEAM-------*/
+
+.team-color{
+background-color: var(--btn-bg-color);
+max-width: 1600px;
+}
+
+.team-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.team-item{
+box-sizing: 0;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: var(--bckground-color)
+}
+
+.team-title{
+text-align: center;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.1;
+letter-spacing: 0.03em;
+color: var(--main-color);
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+.team-text{
+text-align: center;
+line-height: 1.1;
+letter-spacing: 0.03em;
+color: var(--contact-color);
+margin-bottom: 16px;
+}
+
+/*-----TEAM SVG'S-------*/
+
+.team-soc-list{
+display: flex;
+justify-content: center;
+padding-bottom: 30px;
+}
+
+.team-soc-item + .team-soc-item{
+margin-left: 10px;
+}
+
+.team-soc-item{
+width: 44px;
+height: 44px;
+}
+
+.team-soc-icon {
+fill: currentColor;
+}
+
+.team-soc-link{
+width: 100%;
+height: 100%;
+background-color: var(--bckground-color);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+color: var(--soc-icons);
+}
+
+.team-soc-link:hover{
+background-color: var(--accent-color);
+color: var(--bckground-color);
+}
+
+/*---------CLIENTS---------*/
+
+.clients{
+background-color: var(--bckground-color);
+max-width: 1600px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.clients-list{
+display: flex;
+justify-content: center;
+}
+
+.clients-item +.clients-item {
+margin-left: 30px;
+}
+
+.clients-link .clients-icon{
+box-sizing: border-box;
+border: 1px solid var(--soc-icons);
+border-radius: 4px;
+padding: 16px 32px;
+width: 170px;
+height: 92px;
+fill: var(--soc-icons)
+}
+
+.clients-link .clients-icon:hover{
+fill: var(--accent-color);
+border-color: var(--accent-color);
+}
+
+/*----------lINKS----------*/
+
+.nav-link,
+.adress-link {
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--main-color);
+}
+
+.contact-link{
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--contact-color);      
+}
+
+.adress-link {
+color: var(--bckground-color);
+font-style: normal;
+font-weight: 400;
+}
+
+.footer .contact-link {
+font-style: normal;
+font-weight: 400;
+color: var(--bot-adress-color);
+}
+
+.portfolio{
+margin-right: auto;
+margin-left: auto;
+}
+
+/*------------BUTTONS PORTFOLIO--------*/
+
+.btn{
+display: flex;
+justify-content: center;
+}
+
+.btn-item{
+margin-right: 8px;
+}
+
+.portfolio-btn{
+border-radius: 4px;
+border-style: hidden;
+padding: 6px 22px;
+text-align: center;
+margin-bottom: 50px;
+cursor: pointer;
+}
+
+.portfolio-btn.current,
+.portfolio-btn:focus,
+.portfolio-btn:hover{
+background-color: var(--accent-color);
+color: var(--btn-bg-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*-------------CARDS--------------*/
+
+.cards{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.card-item{
+width: calc((100% - 90px) / 3);
+}
+
+.card-item:hover {
+box-shadow:
+0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+cursor: pointer;
+}
+
+.card-title{
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--main-color);
+margin-bottom: 4px;
+}
+
+.card-text{
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--contact-color);
+}
+
+.card-image{
+display: block;
+}
+
+.card-border{
+border: 1px solid var(--border-card-color);
+padding: 20px 24px;
+}
+
+/*-------------FOOTER----------------*/
+
+.footer{
+background-color: var(--box-color);
+max-width: 1600px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.footer-contain{
+display: flex; 
+align-items: baseline;
+}
+
+.footer-list{
+padding-bottom: 60px;
+}
+
+.footer-item{
+margin-bottom: 9px;
+}
+
+footer .logo{
+padding-top: 60px;
+margin-bottom: 20px;
+}
+
+footer .logo{
+color: var(--bckground-color);
+}
+
+.contact-link:focus,
+.contact-link:hover,
+.nav-link:focus,
+.nav-link:hover,
+.current {
+color: var(--accent-color);
+}
+
+.join{
+padding-left: 70px;
+}
+
+.join-text{
+color: var(--bckground-color);
+font-weight: 700;
+line-height: 16px;
+text-transform: uppercase;
+}
+
+.join-soc-list {
+display: flex;
+padding-top: 20px;
+}
+
+.join-soc-item+.join-soc-item {
+margin-left: 10px;
+}
+
+.join-soc-item {
+width: 44px;
+height: 44px;
+}
+
+.join-soc-icon {
+fill: currentColor;
+}
+
+.join-soc-link {
+width: 100%;
+height: 100%;
+background-color: var(--footer-icons-bgcolor);
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+color: var(--bckground-color)
+}
+
+.join-soc-link:hover {
+background-color: var(--accent-color);
+color: var(--bckground-color);
+}
